@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*===============================================LOGIN=========================================*/
+
+
+.isi-body{
+    background-color: rgba(25, 27, 172, 0.2);
+}
+
+.box-login{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+.box-login label{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.box-login input{
+    border-radius: 50px;
+    border: 0px;
+}
+
+.box-login .email{
+    margin-bottom: 5px;
+}
+
+.box-login .password{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.box-login button{
+    width: 80%;
+    height: 60px;
+    background-color: #efefef;
+    border-radius: 10px;
+    color: black;
+    border: 0px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 10px;
+}
+.box-login #email_error, #password_error{
+    display: none;
+    color: red;
+    background: rgba(255,0,0,0.1);
+	padding: 5px 8px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+.box-login span{
+    margin-top: 20px;
+}
+
+
+/*==========================================Register===========================================*/
+.isi-body{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.box-register{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.box-register label{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.box-register input{
+    border-radius: 50px;
+    border: 0px;
+}
+
+.box-register .firstname, .lastname{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.box-register .email{
+    margin-bottom: 5px;
+}
+
+.box-register .password{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.box-register button{
+    width: 80%;
+    height: 60px;
+    background-color: #efefef;
+    border-radius: 10px;
+    color: black;
+    border: 0px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 10px;
+}
+.box-register #email_error, #password_error, #depan_error, #belakang_error, #ulang_password_error{
+    display: none;
+    color: red;
+    background: rgba(255,0,0,0.1);
+	padding: 5px 8px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+.box-login span{
+    margin-top: 20px;
+}
+
+/*========================landing page========================*/
+
+.title-atas{
+    background-image: url(../image/hello_page.jpg);
+}
+
+.title{
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+.title h1{
+    line-height: 50px;
+    letter-spacing: 7px;
+}
+.title h5{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*=-=-=-=--fitur=-=-=-=-=*/
+.fitur{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+/*=-=-=-=-Isi Konten=-=-=-=-*/
+
+.isi-konten{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.isi-konten p{
+    padding-top: 20px;
+}
+.footer-menu{
+    padding-top: 20px;
+}
+
+/*====================================================HomePage==========================================*/
+
+.luar-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.dalam-content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*=======================================Profile=========================================================*/
+
+.main-profile .ganti-foto, .hapus-foto{
+    margin-left: 10px;
+}
+
+.main-profile .simpan-tombol, .ganti-tombol{
+    margin-left: 10px;
+}
+
+.main-prfile .isi{
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+/*=================================Market==============================================================*/
+
+.karousel{
+    padding-left: 19%;
+    padding-top: 30px;
+}
+
+/*==============================================kalkulator==============================================*/
+
+.container-kalkulator{
+    padding-top: 70px;
+}
+
+.bagian-kiri label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    /* identical to box height */
+    color: #000000;
+    margin-top: 25px;
+}
+
+.button-kiri{
+    margin-top: 80px;
+}
+
+.button-kiri .hitung{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #efefef;    
+    border-radius: 10px;
+    color: black;
+    border: 0px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 100px;
+    padding-right: 100px;
+    transition: 0.3s;
+}
+
+
+.bagian-kiri input{
+    border-radius: 1px;
+    border-radius: 10px;
+}
+
+.bagian-kanan h2{
+    margin-top: 30px;
+}
+
+.bagian-kanan p{
+    margin-top: 10px;
+}
+
+.button-kiri .hitung:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(96, 147, 242);
+
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+  
+  
+  
+  
+  
+  
+  
