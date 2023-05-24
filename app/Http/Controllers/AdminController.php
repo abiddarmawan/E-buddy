@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Pesan;
 use App\Models\Menu;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Storage;
 class AdminController extends Controller
 {
     //
@@ -31,12 +31,19 @@ class AdminController extends Controller
 
     }
     public function delete(Request $request){
+        
         $pesan = Pesan::where('menu_id', $request->menu)->get();
 
         foreach ($pesan as $item) {
             $item->status = 'Barang Tidak Tersedia';
             $item->save();
         }
+        $menus = Menu::where('id',$request->menu)->get();
+        foreach ($menus as $i) {
+            Storage::delete($i->image);
+        };
+
+        
         Menu::find($request->menu)->delete();
         return redirect('/market');
     }
@@ -61,7 +68,7 @@ class AdminController extends Controller
             if($request->oldImage){
                 Storage::delete($request->id);
             }
-            $validateData['image'] = $request->file('image')->store('post-menu');
+            $validateData['image'] = $request->file('image')->store('image-menu');
         };
 
         $id = $request->id;
